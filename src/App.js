@@ -10,7 +10,6 @@ function App() {
   const [index, setIndex] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const totalPagesCount = questions?.length || 0;
-  // numbered by pages. for exampe { 1: [{"key" : "value"}], 2:["key": "value"], 3: []}
   const [pagesAnswers, setPagesAnswers] = useState({});
 
   const prevButton = () => {
@@ -23,7 +22,6 @@ function App() {
     if (index - 3) {
       setIndex(prevIndex => prevIndex + 1);
     } else {
-      // clear the form on submit
       setPagesAnswers({});
       setSubmitted(true);
     }
