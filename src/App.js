@@ -38,8 +38,8 @@ function App() {
 
   return (
     <div className="App">
-      <Container className="h-100">
-        <Row className="m-5">
+      <Container className="h-150">
+        <Row className="m-7">
           <Col className="align-self-center">
             <MultiStepProgressBar
               step={index}
