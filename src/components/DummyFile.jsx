@@ -12,11 +12,6 @@ const DummyFile = () => {
                 git push -u origin main
             </div>
             <div>
-                git add .
-                git commit -m "your message"
-                git push -u origin branch-name
-            </div>
-            <div>
                 git add . - Means adding all the files
                 git commit -m "message" - Adding message to particular commit
                 git fetch - Get the changes from origin

@@ -8,7 +8,6 @@ export const MultiStepForm = (props) => {
   useEffect(() => {
     // check if the answers isn't empty
     if (Object.keys(answers).length > 1) {
-      // update page answers
       props.onPageUpdate(answers.index, answers);
       // update page number locally
       setAnswers({ index: props.step })
